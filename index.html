@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Jungle</title>
+    
+</head>
+<body>
+
+    <div id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul class="navigation">
+            <li><a class="active" href="index.html">Anasayfa</a></li>
+            <li><a href="iletişim.html">İleteşim</a></li>
+            <li><a href="Etkinlik_Tarihi.html">Etkinlik İsteği</a></li>
+            <li><a href="Yemek_Menusu.html">Yemek Menusu</a></li>
+            <li><a href="login.html">Çıkış</a></li>
+            
+        </ul>
+
+    </div>
+    <section>
+        <h2 id="text"><span>Huzurlu bir kamp için </span><br>KURILGA </h2>
+        <img src="pictures/bird1.png" id="b1">
+        <img src="pictures/bird2.png" id="b2">
+        <img src="pictures/forest.png" id="fr">    
+        <img src="pictures/rocks.png" id="rc">    
+        <img src="pictures/water.png" id="wa">    
+        <a id="btn" href="explorer.html">Ormanı Keşfet</a>
+    </section>
+    
+    <div class="sec">
+        <h2>KURILGA KAMPÇILIK</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores sunt nesciunt, delectus eaque hic! Dicta enim temporibus a architecto omnis dolorum cupiditate obcaecati quo suscipit voluptates iusto culpa placeat labore cumque in, aperiam eaque asperiores voluptatum numquam voluptatibus pariatur accusantium quod. Similique inventore numquam ullam corporis dolor facere, nesciunt quaerat nemo, delectus aliquid accusamus esse labore voluptas iure ex<br><br> quasi dignissimos repellendus aut. Sed ipsum amet aliquid corrupti labore delectus doloribus laboriosam, quas libero id obcaecati quidem molestiae ullam dicta ab,<br><br> veritatis voluptates eius asperiores aperiam ea maxime iure ducimus assumenda? Quis, similique aperiam laborum vitae deserunt corporis accusantium, dolorem, corrupti explicabo ex sunt doloremque quidem possimus pariatur nihil mollitia aliquam?<br><br> Fugit veritatis iusto odio error fuga. Ut possimus saepe quos, molestiae voluptatum sed optio eligendi adipisci qui assumenda ex,<br><br> dicta explicabo dolorem sunt at illo maxime quasi quaerat sint odio totam tenetur aspernatur quibusdam harum? Modi debitis omnis suscipit soluta laboriosam cumque expedita. Deserunt dicta a nobis dignissimos aut perferendis at quo eaque? Consequatur commodi a modi ex dolorum voluptatum quibusdam consectetur sequi,<br><br> obcaecati praesentium. Animi repudiandae, tempore voluptate at deserunt ut officia facilis adipisci, a ab cumque assumenda, id magni nam? Aliquam tempora omnis qui rem a.</p>
+    </div>
+    <script>
+        let text = document.getElementById('text')
+        let b1 = document.getElementById('b1')
+        let b2 = document.getElementById('b2')
+        let fr = document.getElementById('fr')
+        let rc = document.getElementById('rc')
+        let wa = document.getElementById('wa')
+        let header = document.getElementById('header')
+
+        window.addEventListener("scroll",function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.1 + '%'
+            b1.style.top = value * -1 + 'px'
+            b1.style.left = value * 2 + 'px'
+            b2.style.top = value * -1. + 'px'
+            b2.style.left = value * -4 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            rc.style.top = value * 0.12 + 'px'
+            fr.style.top = value * 0.25 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        
+        })
+    </script>
+    
+</body>
+</html>
